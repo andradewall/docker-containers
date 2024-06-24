@@ -1,0 +1,18 @@
+services:
+  mysql57:
+    container_name: mysql57
+    image: mysql:5.7.44
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=dtdsv3010
+    volumes:
+      - ./db-data:/var/lib/mysql
+      - ./conf/my.cnf:/etc/mysql/conf.d/my.cnf
+    networks:
+      - mysql57_net
+
+networks:
+  mysql57_net:
+    external: true
