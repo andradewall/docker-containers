@@ -1,0 +1,18 @@
+services:
+  php-73:
+    build:
+      context: ./
+    volumes:
+      - ./code:/var/www/html
+    ports:
+      - "8073:80"
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+    container_name: php-73
+    networks:
+      - mysql57_net
+
+networks:
+  mysql57_net:
+    external: true
