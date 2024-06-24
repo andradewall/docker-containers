@@ -1,0 +1,22 @@
+services:
+  dbgate:
+    image: dbgate/dbgate
+    restart: always
+    ports:
+      - 8030:3000
+    volumes:
+      - dbgate-data:/root/.dbgate
+    container_name: dbgate
+    networks:
+      - mysql57_net
+      - postgres
+
+volumes:
+  dbgate-data:
+    driver: local
+
+networks:
+  mysql57_net:
+    external: true
+  postgres:
+    external: true
