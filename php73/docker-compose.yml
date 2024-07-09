@@ -11,8 +11,8 @@ services:
       - APP_DEBUG=true
     container_name: php-73
     networks:
-      - mysql57_net
+      - mysql57_default
 
 networks:
-  mysql57_net:
+  mysql57_default:
     external: true

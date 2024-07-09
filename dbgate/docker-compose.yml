@@ -8,7 +8,7 @@ services:
       - dbgate-data:/root/.dbgate
     container_name: dbgate
     networks:
-      - mysql57_net
+      - mysql57_default
       - postgres
 
 volumes:
@@ -16,7 +16,7 @@ volumes:
     driver: local
 
 networks:
-  mysql57_net:
+  mysql57_default:
     external: true
   postgres:
     external: true

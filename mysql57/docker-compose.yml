@@ -11,8 +11,8 @@ services:
       - ./db-data:/var/lib/mysql
       - ./conf/my.cnf:/etc/mysql/conf.d/my.cnf
     networks:
-      - mysql57_net
+      - mysql57_default
 
 networks:
-  mysql57_net:
+  mysql57_default:
     external: true
