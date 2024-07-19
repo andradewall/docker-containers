@@ -11,7 +11,8 @@ services:
       - APP_DEBUG=true
     container_name: php-73
     networks:
-      - mysql57_net
+      mysql57_net:
+        ipv4_address: 10.6.0.4
 
 networks:
   mysql57_net:
