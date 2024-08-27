@@ -10,8 +10,9 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: dtdsv3010
     networks:
-      - postgres
+      postgres_net:
+        ipv4_address: 10.5.0.2
 
 networks:
-  postgres:
+  postgres_net:
     external: true
