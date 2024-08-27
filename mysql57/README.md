@@ -16,5 +16,5 @@ docker network create --subnet=10.6.0.0/16 mysql57_net
 docker compose up -d
 ```
 
-> [!INFO]
+> [!NOTE]
 > This container will receive the IP `10.6.0.2`
