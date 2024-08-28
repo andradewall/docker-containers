@@ -9,6 +9,7 @@ services:
       - MYSQL_ROOT_PASSWORD=dtdsv3010
     volumes:
       - ./db-data:/var/lib/mysql
+      - ./dumps:/dumps
       - ./conf/my.cnf:/etc/mysql/conf.d/my.cnf
     networks:
       mysql57_net:
