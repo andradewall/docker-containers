@@ -6,7 +6,7 @@ something by yourself.
 
 ## Index
 
-- [DBGate](/dbgate/README.md)
+- [DbGate](/dbgate/README.md)
 - [Mailpit](/mailpit/README.md)
 - [MySQL 5.7](/mysql57/README.md)
 - [MySQL 8.4](/mysql8/README.md)
@@ -22,8 +22,8 @@ something by yourself.
 1. Clone this repo
 2. On each container, build and run it
 
-   > [!INFO]
-   > Or simply run `docker compose up -d`
+> [!NOTE]
+> Or simply run `docker compose up -d`
 
    > [!WARNING]
    > Some containers requires a Docker subnet.  
