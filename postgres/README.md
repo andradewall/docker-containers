@@ -1,6 +1,6 @@
-# PostgreSQL Container
+# 🐘 PostgreSQL
 
-This container is for PostgreSQL, which uses the Docker image `postgres`
+This container is for [PostgreSQL](https://www.postgresql.org/), which uses the Docker image [postgres](https://hub.docker.com/_/postgres)
 
 ## Installation
 
