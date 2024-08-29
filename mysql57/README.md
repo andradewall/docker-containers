@@ -7,7 +7,7 @@ This container is for MySQL 5.7, which uses the Docker image [mysql:5.7.44](http
 1. Manually create the network for MySQL:
 
 ```bash
-docker network create --subnet=10.6.0.0/16 mysql57_net
+docker network create --subnet=10.6.0.0/16 --gateway=10.6.0.1 mysql57_net
 ```
 
 2. Create and start running the container on detached mode:
