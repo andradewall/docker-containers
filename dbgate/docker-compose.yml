@@ -10,6 +10,8 @@ services:
     networks:
       mysql57_net:
         ipv4_address: 10.6.0.3
+      mysql8_net:
+        ipv4_address: 10.7.0.3
       postgres_net:
         ipv4_address: 10.5.0.3
       web:
@@ -30,6 +32,8 @@ networks:
   mysql57_net:
     external: true
   postgres_net:
+    external: true
+  mysql8_net:
     external: true
   web:
     external: true

@@ -1,14 +1,13 @@
+# 🐘 PostgreSQL
 
-# PostgreSQL Container
-
-This container is for PostgreSQL, which uses the Docker image `postgres`
+This container is for [PostgreSQL](https://www.postgresql.org/), which uses the Docker image [postgres](https://hub.docker.com/_/postgres)
 
 ## Installation
 
 1. Manually create the network for PostgreSQL:
 
 ```bash
-docker network create --subnet=10.5.0.0./16 postgres_net
+docker network create --subnet=10.5.0.0./16 --gateway=10.5.0.1 postgres_net
 ```
 
 2. Create and start running the container on detached mode:

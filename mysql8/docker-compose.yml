@@ -1,0 +1,20 @@
+services:
+  mysql8:
+    container_name: mysql8
+    image: mysql:lts # actually, LTS is MySQL 8.4
+    restart: always
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=dtdsv3010
+    volumes:
+      - ./db-data:/var/lib/mysql
+      - ./dumps:/dumps
+      - ./conf/my.cnf:/etc/mysql/conf.d/my.cnf
+    networks:
+      mysql8_net:
+        ipv4_address: 10.7.0.2
+
+networks:
+  mysql8_net:
+    external: true
