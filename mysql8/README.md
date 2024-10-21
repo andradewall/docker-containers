@@ -7,7 +7,7 @@
 1. Manually create the network for MySQL:
 
 ```bash
-docker network create --subnet=10.7.0.0/16 --gateway=10.7.0.1 mysql57_net
+docker network create --subnet=10.7.0.0/16 --gateway=10.7.0.1 mysql8_net
 ```
 
 2. Create and start running the container on detached mode:
