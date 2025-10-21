@@ -13,7 +13,7 @@ services:
       - ./conf/my.cnf:/etc/mysql/conf.d/my.cnf
     networks:
       mysql8_net:
-        ipv4_address: 10.7.0.2
+        ipv4_address: 10.10.10.2
 
 networks:
   mysql8_net:
